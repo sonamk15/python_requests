@@ -4,7 +4,7 @@ import requests
     
 BASENAME="http://saral.navgurukul.org/api"
 
-def get(url,params={}):
+def get(url):
     request=requests.get(url,params)
     response= request.json()
     return response
